@@ -1,0 +1,49 @@
+.addPost-form{
+    height: 100%;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    position: relative;
+    z-index: 2;
+}
+.addPost-form h1{
+    display: flex;
+    justify-content: center;
+}
+.addPost-form input{
+    width:100%;
+    height:3vh;
+    margin-top:1vh;
+    margin-bottom: 1vh;
+}
+.addPost-form textarea{
+    width:100%;
+    margin-top:1vh;
+    margin-bottom: 1vh;
+    height: 10vh;
+}
+.addPost-form button{
+    width:40%;
+    height: 4vh;
+}
+.content-form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+}
+#form-heading{
+    width: 100%;   
+    font-family: 'The Girl Next Door', cursive;
+    color:white;
+    font-size: 50px;
+}
+#form-para{
+    font-size: 30px;
+    font-family: 'The Girl Next Door', cursive;
+}
+.form-svg img{
+    height:30vh;
+    width:30vh;
+}

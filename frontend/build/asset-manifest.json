@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97cf5f84.chunk.css",
+    "main.js": "/static/js/main.4530b425.chunk.js",
+    "main.js.map": "/static/js/main.4530b425.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8dc0443e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8dc0443e.js.map",
+    "static/js/2.179f81a6.chunk.js": "/static/js/2.179f81a6.chunk.js",
+    "static/js/2.179f81a6.chunk.js.map": "/static/js/2.179f81a6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4e8f39688a706ca5dadf8939adcc37bd.js": "/precache-manifest.4e8f39688a706ca5dadf8939adcc37bd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.97cf5f84.chunk.css.map": "/static/css/main.97cf5f84.chunk.css.map",
+    "static/js/2.179f81a6.chunk.js.LICENSE.txt": "/static/js/2.179f81a6.chunk.js.LICENSE.txt",
+    "static/media/addpost.svg": "/static/media/addpost.3816d9e1.svg",
+    "static/media/askMe.svg": "/static/media/askMe.aec09c84.svg",
+    "static/media/bio.svg": "/static/media/bio.58ce3168.svg",
+    "static/media/cat.svg": "/static/media/cat.d3446eb5.svg",
+    "static/media/energizer.svg": "/static/media/energizer.bc6e078c.svg",
+    "static/media/nature.svg": "/static/media/nature.095f87f7.svg",
+    "static/media/remotely.svg": "/static/media/remotely.62925afc.svg",
+    "static/media/tea.svg": "/static/media/tea.1a90248c.svg",
+    "static/media/yoga.svg": "/static/media/yoga.e813d0cc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8dc0443e.js",
+    "static/js/2.179f81a6.chunk.js",
+    "static/css/main.97cf5f84.chunk.css",
+    "static/js/main.4530b425.chunk.js"
+  ]
+}

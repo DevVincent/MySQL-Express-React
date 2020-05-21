@@ -1,0 +1,42 @@
+.contact-heading{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:92vh;
+}
+.contact-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading h1,p{
+    font-family: 'The Girl Next Door', cursive;
+}
+.contact-heading p{
+    color:black;
+}
+.contact-heading h1{
+    font-size:4vh;
+}
+.contact-email input{
+    height: 2.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 80%;
+}
+.contact-email button{
+    height:3vh;
+    width: 20%;
+    cursor: pointer;
+}
+img{
+    height: 25vh;
+    width:25vh;
+}
+.svg-icon{
+    color:black;
+}
