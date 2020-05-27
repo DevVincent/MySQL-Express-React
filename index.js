@@ -11,6 +11,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //create db connection
+ //const db = mysql.createConnection({
+  //  host: 'localhost',
+  //  user: 'vincyhbp_root',
+  //  password: 'Basededatos008',
+  //  database: 'vincyhbp_nodesql'
+//});
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -76,10 +82,24 @@ app.get('/posts/add', (req, res) =>{
 app.get('/posts/delete', (req, res) =>{
     const {ID} = req.query;
     let sql = `DELETE FROM posts WHERE postID ='${ID}'`;
-    let query = db.query(sql, (err, result)=>{
+    let query = db.query(sql, (err, results)=>{
         console.log("deleting post with ID: "+ID);
     });
     res.send('deleting post');
+});
+
+app.get('/posts/fullPost', (req, res) =>{
+    const {ID} = req.query;
+    let sql = `SELECT * FROM posts WHERE postID = '${ID}'`;
+    let query = db.query(sql, (err, results)=>{
+        if(err) {
+            res.send(err)
+        }else{
+            return res.json({
+                data: results       
+            });     
+        }
+    });
 });
 
 app.get('/loggin', (req, res) =>{
@@ -99,6 +119,16 @@ app.get('/loggin', (req, res) =>{
             else if(results[0].userName === username && results[0].password === password){//user found
                 return res.json({
                     status: "The user was found"      
+                })
+            }
+            else if(results[0].password !== password){//user found
+                return res.json({
+                    status: "The password does not match our records"      
+                })
+            }
+            else if(results[0].userName !== username && results[0].password === password){//user found
+                return res.json({
+                    status: "The user was not found"      
                 })
             }
         }
