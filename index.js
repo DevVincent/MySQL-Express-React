@@ -10,13 +10,7 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(bodyParser.json());
 
-//create db connection
- //const db = mysql.createConnection({
-  //  host: 'localhost',
-  //  user: 'vincyhbp_root',
-  //  password: 'Basededatos008',
-  //  database: 'vincyhbp_nodesql'
-//});
+
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
