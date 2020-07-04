@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql')
-const urlencodedParser = bodyParser.urlencoded({extended:false});
+const urlencodedParser = bodyParser.urlencoded({extended:false})
 
 const app = express();
 const PORT = process.env.PORT || 4000;
